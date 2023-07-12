@@ -1,4 +1,4 @@
-# pythondata-cpu-minerva
+# pythondata-cpu-coreblocks
 
 Files needed for the Coreblocks cpu packaged into a Python module so they can be used with Python libraries and tools.
 
@@ -14,7 +14,7 @@ system.
 
 ```
 git clone https://github.com/kuznia-rdzeni/pythondata-cpu-coreblocks.git
-cd pythondata-cpu-minerva
+cd pythondata-cpu-coreblocks
 git submodule update --init --recursive --remote
 sudo python setup.py install
 ```
