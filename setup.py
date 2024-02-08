@@ -23,6 +23,11 @@ Python module containing sources files for Coreblocks cpu.""",
     	'': ['sources/**'],
     },
     include_package_data=True,
+    install_requires=[
+        "amaranth @ git+https://github.com/amaranth-lang/amaranth@94c504afc7d81738ecdc9523a2615ef43ecbf51a",
+        "amaranth-yosys >= 0.35",
+        "typing-extensions >= 4.9"
+    ],
     project_urls={
         "Bug Tracker": "https://github.com/kuznia-rdzeni/pythondata-cpu-coreblocks/issues",
         "Source Code": "https://github.com/kuznia-rdzeni/pythondata-cpu-coreblocks",
