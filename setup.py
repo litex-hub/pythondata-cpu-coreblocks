@@ -4,8 +4,8 @@ import setuptools
 setuptools.setup(
     name="pythondata-cpu-coreblocks",
     version="0.0.1", # todo commit hash
-    author="",
-    author_email="",
+    author="kuznia-rdzeni",
+    author_email="coreblocks@cs.uni.wroc.pl",
     description="""\
 Python module containing sources files for Coreblocks cpu.""",
     long_description="",
@@ -16,7 +16,7 @@ Python module containing sources files for Coreblocks cpu.""",
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.5',
+    python_requires='>=3.11',
     zip_safe=False,
     packages=setuptools.find_packages(),
     package_data={

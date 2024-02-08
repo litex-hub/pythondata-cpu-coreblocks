@@ -16,6 +16,6 @@ system.
 git clone https://github.com/kuznia-rdzeni/pythondata-cpu-coreblocks.git
 cd pythondata-cpu-coreblocks
 git submodule update --init --recursive --remote
-sudo python setup.py install
+python setup.py install
 ```
 
