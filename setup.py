@@ -3,7 +3,7 @@ import setuptools
 
 setuptools.setup(
     name="pythondata-cpu-coreblocks",
-    version="0.0.1", # todo commit hash
+    version="0.0.1.2024.02.08",
     author="kuznia-rdzeni",
     author_email="coreblocks@cs.uni.wroc.pl",
     description="""\
