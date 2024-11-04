@@ -3,7 +3,7 @@ import setuptools
 
 setuptools.setup(
     name="pythondata-cpu-coreblocks",
-    version="0.0.1.2024.02.08",
+    version="0.0.1.2024.10.27",
     author="kuznia-rdzeni",
     author_email="coreblocks@cs.uni.wroc.pl",
     description="""\
@@ -24,9 +24,10 @@ Python module containing sources files for Coreblocks cpu.""",
     },
     include_package_data=True,
     install_requires=[
-        "amaranth @ git+https://github.com/amaranth-lang/amaranth@94c504afc7d81738ecdc9523a2615ef43ecbf51a",
-        "amaranth-yosys >= 0.35",
-        "typing-extensions >= 4.9"
+        "amaranth @ git+https://github.com/amaranth-lang/amaranth@9bd536bbf96b07720d6e4a8709b30492af8ddd13",
+        "amaranth-stubs @ git+https://github.com/kuznia-rdzeni/amaranth-stubs@c0325b42e4553def483a82ffed14fdc6bf353bdb",
+        "amaranth-yosys == 0.40.0.0.post100",
+        "dataclasses-json >= 0.6.3"
     ],
     project_urls={
         "Bug Tracker": "https://github.com/kuznia-rdzeni/pythondata-cpu-coreblocks/issues",
