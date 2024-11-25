@@ -3,7 +3,7 @@ import setuptools
 
 setuptools.setup(
     name="pythondata-cpu-coreblocks",
-    version="0.0.1.2024.10.27",
+    version="0.0.1.2024.11.25",
     author="kuznia-rdzeni",
     author_email="coreblocks@cs.uni.wroc.pl",
     description="""\
@@ -24,10 +24,12 @@ Python module containing sources files for Coreblocks cpu.""",
     },
     include_package_data=True,
     install_requires=[
-        "amaranth @ git+https://github.com/amaranth-lang/amaranth@9bd536bbf96b07720d6e4a8709b30492af8ddd13",
-        "amaranth-stubs @ git+https://github.com/kuznia-rdzeni/amaranth-stubs@c0325b42e4553def483a82ffed14fdc6bf353bdb",
+        "amaranth == 0.5.3",
+# FIXME: There is a false-positive conflict with amarhanth-stubs versioning; but correct version is taken from transactron deps
+#        "amaranth-stubs @ git+https://github.com/kuznia-rdzeni/amaranth-stubs@edb302b001433edf4c8568190adc9bd0c0039f45",
         "amaranth-yosys == 0.40.0.0.post100",
-        "dataclasses-json >= 0.6.3"
+        "dataclasses-json == 0.6.3",
+        "transactron @ git+https://github.com/kuznia-rdzeni/transactron@972047b7bfac3d2e193a428de35c976f9b17c51a",
     ],
     project_urls={
         "Bug Tracker": "https://github.com/kuznia-rdzeni/pythondata-cpu-coreblocks/issues",
