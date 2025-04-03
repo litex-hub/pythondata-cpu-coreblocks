@@ -16,21 +16,25 @@ Python module containing sources files for Coreblocks cpu.""",
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.11',
+    python_requires='>=3.8',
     zip_safe=False,
-    packages=setuptools.find_packages(),
+    packages=["pythondata_cpu_coreblocks"],
     package_data={
     	'': ['sources/**'],
     },
     include_package_data=True,
     install_requires=[
-        "amaranth == 0.5.3",
-# FIXME: There is a false-positive conflict with amarhanth-stubs versioning; but correct version is taken from transactron deps
-#        "amaranth-stubs @ git+https://github.com/kuznia-rdzeni/amaranth-stubs@edb302b001433edf4c8568190adc9bd0c0039f45",
-        "amaranth-yosys == 0.40.0.0.post100",
-        "dataclasses-json == 0.6.3",
-        "transactron @ git+https://github.com/kuznia-rdzeni/transactron@61215b518fc8049b6408cb416ec84b51c9c14a1c",
+        "pipx"
     ],
+    extras_require={
+        "native": [
+            "amaranth == 0.5.3",
+            "amaranth-stubs @ git+https://github.com/kuznia-rdzeni/amaranth-stubs.git@481b28c70812936d067e93e4e4cf2eb34bcc50d3",
+            "amaranth-yosys == 0.40.0.0.post100",
+            "dataclasses-json == 0.6.3",
+            "transactron @ git+https://github.com/kuznia-rdzeni/transactron@61215b518fc8049b6408cb416ec84b51c9c14a1c"
+        ],
+    },
     project_urls={
         "Bug Tracker": "https://github.com/kuznia-rdzeni/pythondata-cpu-coreblocks/issues",
         "Source Code": "https://github.com/kuznia-rdzeni/pythondata-cpu-coreblocks",
