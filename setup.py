@@ -3,9 +3,9 @@ import setuptools
 
 setuptools.setup(
     name="pythondata-cpu-coreblocks",
-    version="0.0.1.2025.04.02",
+    version="0.0.1.2025.04.03",
     author="kuznia-rdzeni",
-    author_email="coreblocks@cs.uni.wroc.pl",
+    author_email="org@kuznia-rdzeni.org",
     description="""\
 Python module containing sources files for Coreblocks cpu.""",
     long_description="",
