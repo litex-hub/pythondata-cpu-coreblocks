@@ -3,7 +3,7 @@ import setuptools
 
 setuptools.setup(
     name="pythondata-cpu-coreblocks",
-    version="0.0.1.2025.04.03",
+    version="0.0.1.2025.05.09",
     author="kuznia-rdzeni",
     author_email="org@kuznia-rdzeni.org",
     description="""\
@@ -32,7 +32,7 @@ Python module containing sources files for Coreblocks cpu.""",
             "amaranth-stubs @ git+https://github.com/kuznia-rdzeni/amaranth-stubs.git@481b28c70812936d067e93e4e4cf2eb34bcc50d3",
             "amaranth-yosys == 0.40.0.0.post100",
             "dataclasses-json == 0.6.3",
-            "transactron @ git+https://github.com/kuznia-rdzeni/transactron@61215b518fc8049b6408cb416ec84b51c9c14a1c"
+            "transactron @ git+https://github.com/kuznia-rdzeni/transactron.git@6acb8036b346b618a1e7b41ab7d6f75e7491bdd6"
         ],
     },
     project_urls={
