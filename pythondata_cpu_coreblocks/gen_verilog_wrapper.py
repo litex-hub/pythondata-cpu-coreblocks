@@ -4,7 +4,7 @@
 # /// script
 # requires-python = ">=3.11"
 # dependencies = [ 
-#    "amaranth == 0.5.3",
+#    "amaranth == 0.5.4",
 #    "amaranth-stubs == 0.1.1",
 #    "amaranth-yosys == 0.40.0.0.post100",
 #    "dataclasses-json == 0.6.3",

@@ -3,7 +3,7 @@ import setuptools
 
 setuptools.setup(
     name="pythondata-cpu-coreblocks",
-    version="0.0.1.2025.09.09",
+    version="0.0.1.2025.09.09.1",
     author="kuznia-rdzeni",
     author_email="org@kuznia-rdzeni.org",
     description="""\
@@ -28,7 +28,7 @@ Python module containing sources files for Coreblocks cpu.""",
     ],
     extras_require={
         "native": [
-            "amaranth == 0.5.3",
+            "amaranth == 0.5.4",
             "amaranth-stubs == 0.1.1",
             "amaranth-yosys == 0.40.0.0.post100",
             "dataclasses-json == 0.6.3",
