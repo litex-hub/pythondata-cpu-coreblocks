@@ -3,7 +3,7 @@ import setuptools
 
 setuptools.setup(
     name="pythondata-cpu-coreblocks",
-    version="0.0.1.2025.09.09.1",
+    version="0.0.1.2025.09.30",
     author="kuznia-rdzeni",
     author_email="org@kuznia-rdzeni.org",
     description="""\
@@ -32,7 +32,7 @@ Python module containing sources files for Coreblocks cpu.""",
             "amaranth-stubs == 0.1.1",
             "amaranth-yosys == 0.40.0.0.post100",
             "dataclasses-json == 0.6.3",
-            "transactron @ git+https://github.com/kuznia-rdzeni/transactron.git@343500bb1971de64b0864198478420c4b68e5e8e"
+            "transactron == 0.3.1",
         ],
     },
     project_urls={
