@@ -24,7 +24,7 @@ Python module containing sources files for Coreblocks cpu.""",
     },
     include_package_data=True,
     install_requires=[
-        "pipx"
+        "pipx >= 1.8.0"
     ],
     extras_require={
         "native": [
