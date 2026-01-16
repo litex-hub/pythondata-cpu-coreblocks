@@ -3,7 +3,7 @@ import setuptools
 
 setuptools.setup(
     name="pythondata-cpu-coreblocks",
-    version = "2025.08",
+    version = "2025.12",
     author="kuznia-rdzeni",
     author_email="org@kuznia-rdzeni.org",
     description="""\
