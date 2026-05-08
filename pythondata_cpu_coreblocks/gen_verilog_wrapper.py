@@ -1,32 +1,11 @@
-# Copyright (c) 2025 Piotr Wegrzyn (Coreforge Foundation) <piotro@piotro.eu>
+# Copyright (c) 2025 Aria Wegrzyn (Coreforge Foundation) <git@ariac.at>
 # SPDX-License-Identifier: BSD-3-Clause
 
-# /// script
-# requires-python = ">=3.11"
-# dependencies = [ 
-#       "amaranth==0.5.8",
-#       "amaranth-stubs==0.1.2",
-#       "amaranth-yosys==0.40.0.0.post100",
-#       "dataclasses-json==0.6.3",
-#       "transactron==0.5.1",
-# ]
-# ///
-
 import sys
-import os
+import subprocess
+
+COREBLOCKS_DEPENDENCY = 'git+https://github.com/awariac/coreblocks.git@9069b6faaa1158d8052fabcc95229a8b61dd4783'
 
 if __name__ == "__main__":
-    parent = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    sys.path.insert(0, parent)
-
-from pythondata_cpu_coreblocks import RUN_NATIVE, PYTHON3_VERSION, data_location
-
-sys.path += [data_location]
-
-import scripts.gen_verilog
-
-if __name__ == "__main__":
-    if RUN_NATIVE:
-        assert sys.version_info >= (3, PYTHON3_VERSION), f"Coreblocks requires >=python3.{PYTHON3_VERSION} for elaboration (in RUN_NATIVE mode)."
-
-    scripts.gen_verilog.main()
+    ret = subprocess.run(['pipx', 'run', '--spec', COREBLOCKS_DEPENDENCY, 'coreblocks'] + sys.argv[1:])
+    sys.exit(ret.returncode)

@@ -1,4 +1,0 @@
-[submodule "pythondata_cpu_coreblocks/sources"]
-	path = pythondata_cpu_coreblocks/sources
-	url = https://github.com/kuznia-rdzeni/coreblocks.git
-    branch = master
