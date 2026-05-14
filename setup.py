@@ -21,7 +21,7 @@ Python module providing Coreblocks CPU to LiteX""",
     packages=["pythondata_cpu_coreblocks"],
     include_package_data=True,
     install_requires=[
-        "pipx >= 1.8.0"
+        "pipx >= 1.12.0"
     ],
     project_urls={
         "Bug Tracker": "https://github.com/kuznia-rdzeni/pythondata-cpu-coreblocks/issues",
