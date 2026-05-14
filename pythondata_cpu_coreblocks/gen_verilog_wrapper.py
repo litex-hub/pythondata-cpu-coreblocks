@@ -4,7 +4,7 @@
 import sys
 import subprocess
 
-COREBLOCKS_DEPENDENCY = 'git+https://github.com/awariac/coreblocks.git@9069b6faaa1158d8052fabcc95229a8b61dd4783'
+COREBLOCKS_DEPENDENCY = 'git+https://github.com/kuznia-rdzeni/coreblocks.git@65e99687fc41b4a23acc735bd5a8b1b6d4fddb24'
 
 if __name__ == "__main__":
     ret = subprocess.run(['pipx', 'run', '--spec', COREBLOCKS_DEPENDENCY, 'coreblocks'] + sys.argv[1:])
